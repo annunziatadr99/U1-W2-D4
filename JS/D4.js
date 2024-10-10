@@ -27,14 +27,28 @@ function crazySum(num1, num2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function crazyDiff(num3) {
+  if (num3 > 19) {
+    return (num3 - 19) * 3;
+  } else {
+    return num3 - 19;
+  }
+}
+console.log(crazyDiff(20));
+console.log(crazyDiff(18));
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function boundary(n) {
+  return (n > 20 && n <= 100) || n === 400;
+}
+console.log(boundary(20));
+console.log(boundary(400));
+console.log(boundary(13));
+console.log(boundary(50));
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
