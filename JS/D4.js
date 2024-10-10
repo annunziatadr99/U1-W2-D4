@@ -71,13 +71,22 @@ console.log(epify("EPICODE:Sono Dario!"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function check3and7(positivenumber) {
+  return positivenumber % 3 === 0 || positivenumber % 7 === 0;
+}
+console.log(check3and7(7));
+console.log(check3and7(3));
+console.log(check3and7(20));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function reverseString(string) {
+  return string.split("").revenge("").joint("");
+}
+console.log(reverseString("Hello!"));
+console.log(reverseString("EPICODE"));
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
